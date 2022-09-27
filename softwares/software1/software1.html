@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>猜数字游戏</title>
+    <script src="script\script.js" async></script>
+  </head>
+  <body>
+    <div>
+      <!--文字部分-->
+      <div>
+        <div style="font-size: 30px"><b>猜字谜游戏</b></div>
+        <div>程序刚刚生成了一个0-100的随机数，请你猜测出它的值</div>
+        <div>你每猜一次，就会有提示说是高了还是低了。你最多猜10次</div>
+      </div>
+      <!--游戏部分-->
+      <div>
+        <label for="guessField">请猜数:</label>
+        <input type="text" id="guessField" class="guessField" />
+        <input
+          type="submit"
+          id="guessSubmit"
+          class="guessSubmit"
+          value="确定"
+        />
+        <div class="resultParas">
+          <p class="guesses"></p>
+          <p class="rightOrWrong"></p>
+          <p class="lowOrHigh"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
